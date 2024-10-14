@@ -7,7 +7,7 @@ spec:
   minAvailable: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: helm-controller
+      app: helm-controller
 ---
 apiVersion: policy/v1
 kind: PodDisruptionBudget
@@ -18,7 +18,7 @@ spec:
   minAvailable: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: kustomize-controller
+      app: kustomize-controller
 ---
 apiVersion: policy/v1
 kind: PodDisruptionBudget
@@ -29,7 +29,7 @@ spec:
   minAvailable: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: notification-controller
+      app: notification-controller
 ---
 apiVersion: policy/v1
 kind: PodDisruptionBudget
@@ -40,4 +40,4 @@ spec:
   minAvailable: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: source-controller
+      app: source-controller
