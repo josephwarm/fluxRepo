@@ -4543,7 +4543,7 @@ spec:
         prometheus.io/scrape: "true"
       labels:
         app: source-controller
-        test: test
+        test: test2
     spec:
       containers:
       - args:
