@@ -6,6 +6,16 @@ metadata:
   namespace: flux-system
 spec:
   replicas: 2
+  template:
+    spec:
+      nodeSelector:
+        nodegroup: infra
+        team: ops
+      tolerations:
+        - effect: NoSchedule
+          key: dedicated
+          operator: Equal
+          value: ops
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -14,6 +24,16 @@ metadata:
   namespace: flux-system
 spec:
   replicas: 2
+  template:
+    spec:
+      nodeSelector:
+        nodegroup: infra
+        team: ops
+      tolerations:
+        - effect: NoSchedule
+          key: dedicated
+          operator: Equal
+          value: ops
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -22,6 +42,16 @@ metadata:
   namespace: flux-system
 spec:
   replicas: 2
+  template:
+    spec:
+      nodeSelector:
+        nodegroup: infra
+        team: ops
+      tolerations:
+        - effect: NoSchedule
+          key: dedicated
+          operator: Equal
+          value: ops
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -29,4 +59,14 @@ metadata:
   name: source-controller
   namespace: flux-system
 spec:
-  replicas: 2
+  replicas: 1
+  template:
+    spec:
+      nodeSelector:
+        nodegroup: infra
+        team: ops
+      tolerations:
+        - effect: NoSchedule
+          key: dedicated
+          operator: Equal
+          value: ops
