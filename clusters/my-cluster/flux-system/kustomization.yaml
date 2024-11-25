@@ -4,5 +4,7 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - gotk-pdb.yaml
+- helm-repository.yaml
+- helm-release.yaml
 patchesStrategicMerge:
 - gotk-patches.yaml
