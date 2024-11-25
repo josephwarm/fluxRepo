@@ -4,7 +4,9 @@ metadata:
   name: redis
   namespace: redis
 spec:
-  interval: 5m
+  interval: 1m
+  driftDetection:
+    mode: warn
   chart:
     spec:
       chart: redis
@@ -19,13 +21,12 @@ spec:
     auth:
       enabled: true
       password: "password"
-    replica:
-      replicaCount: 2    # This will create 1 master + 1 replica
     master:
       persistence:
         enabled: true
         size: 8Gi
     replica:
+      replicaCount: 2  
       persistence:
         enabled: true
         size: 8Gi
