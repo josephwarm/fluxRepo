@@ -15,7 +15,17 @@ spec:
         namespace: flux-system
   values:
     # Add your specific configuration values here
-    architecture: standalone
+    architecture: replication  # Changed from standalone to replication
     auth:
       enabled: true
       password: "password"
+    replica:
+      replicaCount: 1    # This will create 1 master + 1 replica
+    master:
+      persistence:
+        enabled: true
+        size: 8Gi
+    replica:
+      persistence:
+        enabled: true
+        size: 8Gi
