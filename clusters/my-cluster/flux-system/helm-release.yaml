@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: redis
-      version: "17.11.3" # Specify your desired version
+      version: "17.11.5" # Specify your desired version
       sourceRef:
         kind: HelmRepository
         name: bitnami
