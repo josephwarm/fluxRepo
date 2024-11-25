@@ -20,7 +20,7 @@ spec:
       enabled: true
       password: "password"
     replica:
-      replicaCount: 1    # This will create 1 master + 1 replica
+      replicaCount: 2    # This will create 1 master + 1 replica
     master:
       persistence:
         enabled: true
