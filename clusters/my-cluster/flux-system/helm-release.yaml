@@ -7,6 +7,8 @@ spec:
   interval: 1m
   driftDetection:
     mode: warn
+    ignore:
+      - paths: ["/spec/replicas"]
   chart:
     spec:
       chart: redis
