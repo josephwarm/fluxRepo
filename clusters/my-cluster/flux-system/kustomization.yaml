@@ -7,6 +7,8 @@ resources:
 - helm-repository.yaml
 - helm-release.yaml
 - helm-release-2.yaml
-patchesStrategicMerge:
-- gotk-patches.yaml
-- helm-release-patches.yaml
+patches:
+- patch: gotk-patches.yaml
+- patch: helm-release-patches.yaml
+  target:
+    kind: HelmRelease
