@@ -8,7 +8,7 @@ resources:
 - helm-release.yaml
 - helm-release-2.yaml
 patches:
-- patch: gotk-patches.yaml
-- patch: helm-release-patches.yaml
+- path: gotk-patches.yaml
+- path: helm-release-patches.yaml
   target:
     kind: HelmRelease
