@@ -6,5 +6,7 @@ resources:
 - gotk-pdb.yaml
 - helm-repository.yaml
 - helm-release.yaml
+- helm-release-2.yaml
 patchesStrategicMerge:
 - gotk-patches.yaml
+- helm-release-patches.yaml

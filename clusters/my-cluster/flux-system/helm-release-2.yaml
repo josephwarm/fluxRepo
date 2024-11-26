@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: redis
+      chart: redis-2
       version: "17.11.6" # Specify your desired version
       sourceRef:
         kind: HelmRepository
@@ -24,7 +24,7 @@ spec:
         enabled: true
         size: 8Gi
     replica:
-      replicaCount: 2  
+      replicaCount: 3  
       persistence:
         enabled: true
         size: 8Gi
