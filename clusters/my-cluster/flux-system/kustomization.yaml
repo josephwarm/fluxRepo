@@ -5,10 +5,5 @@ resources:
 - gotk-sync.yaml
 - gotk-pdb.yaml
 - helm-repository.yaml
-- helm-release.yaml
-- helm-release-2.yaml
 patches:
 - path: gotk-patches.yaml
-- path: helm-release-patches.yaml
-  target:
-    kind: HelmRelease

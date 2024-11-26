@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: redis
-      version: "17.11.6" # Specify your desired version
+      version: "17.11.7" # Specify your desired version
       sourceRef:
         kind: HelmRepository
         name: bitnami
@@ -24,7 +24,7 @@ spec:
         enabled: true
         size: 8Gi
     replica:
-      replicaCount: 2  
+      replicaCount: 4  
       persistence:
         enabled: true
         size: 8Gi
