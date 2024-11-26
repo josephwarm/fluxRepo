@@ -10,3 +10,17 @@ spec:
     name: flux-system
   path: ./clusters/infrastructure/applications
   prune: true
+  patches:
+    - target:
+        kind: HelmRelease
+      patch: |-
+        apiVersion: helm.toolkit.fluxcd.io/v2beta1
+        kind: HelmRelease
+        metadata:
+          name: all-helm-release
+        spec:
+          driftDetection:
+            mode: warn
+            ignore:
+              - paths:
+                  - "/spec/replicas"
