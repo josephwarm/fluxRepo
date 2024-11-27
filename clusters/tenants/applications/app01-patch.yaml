@@ -1,0 +1,7 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: tenant-app01
+  namespace: flux-system
+spec:
+  path: ./my-cluster
