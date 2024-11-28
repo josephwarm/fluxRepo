@@ -35,4 +35,4 @@ spec:
                     ignore:
                       - paths:
                           - "/spec/replicas"
-                          - "/spec/template/spec/containers/*/resources"
+                          - "/spec/template/spec/containers/0/resources"
