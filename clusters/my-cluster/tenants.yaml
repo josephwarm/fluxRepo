@@ -35,7 +35,21 @@ spec:
                     ignore:
                       - paths:
                           - "/spec/replicas"
+                          - "/spec/template/spec/initContainers/0/resources"
+                          - "/spec/template/spec/initContainers/1/resources"
+                          - "/spec/template/spec/initContainers/2/resources"
+                          - "/spec/template/spec/initContainers/3/resources"
+                          - "/spec/template/spec/initContainers/4/resources"
                           - "/spec/template/spec/containers/0/resources"
+                          - "/spec/template/spec/containers/1/resources"
+                          - "/spec/template/spec/containers/2/resources"
+                          - "/spec/template/spec/containers/3/resources"
+                          - "/spec/template/spec/containers/4/resources"
+                          - "/spec/template/spec/containers/5/resources"
+                          - "/spec/template/spec/containers/6/resources"
+                          - "/spec/template/spec/containers/7/resources"
+                          - "/spec/template/spec/containers/8/resources"
+                          - "/spec/template/spec/containers/9/resources"
                       - paths:
                           - "/spec/metrics"
                         target:
