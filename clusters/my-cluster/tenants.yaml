@@ -31,7 +31,7 @@ spec:
                   name: all-helm-release
                 spec:
                   driftDetection:
-                    mode: warn
+                    mode: enabled
                     ignore:
                       - paths:
                           - "/spec/replicas"
