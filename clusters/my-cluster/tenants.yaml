@@ -36,3 +36,7 @@ spec:
                       - paths:
                           - "/spec/replicas"
                           - "/spec/template/spec/containers/0/resources"
+                      - paths:
+                          - "/spec/metrics"
+                        target:
+                          kind: HorizontalPodAutoscaler
