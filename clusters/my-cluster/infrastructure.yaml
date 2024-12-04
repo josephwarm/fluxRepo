@@ -13,4 +13,4 @@ spec:
   patches:
     - target:
         kind: HelmRelease
-      path: ../shared/helm-release-patch.yaml
+      path: ./shared/helm-release-patch.yaml
